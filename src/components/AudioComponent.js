@@ -14,7 +14,9 @@ export default function AudioComponent(props){
     return(<>
 
 
-        <button onClick={() =>  speechSynthesis.speak(msg)}>
+        <button
+        style={{border:"1px solid black"}}
+        onClick={() =>  speechSynthesis.speak(msg)}>
             Play!
 
         </button>

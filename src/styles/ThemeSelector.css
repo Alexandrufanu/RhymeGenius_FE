@@ -1,0 +1,38 @@
+.onePoemType{
+    margin-top: -3%;
+    display: flex;
+    border: 5px solid #7400B8;
+    border-style: double;
+    border-radius: 80px;
+    margin-left: 9%;
+    width: 20%;
+    height: 5vh;
+    margin-bottom: 5%;
+    background-color: white;
+    /* align-self: auto; */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .container2{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    /* background-color: white; */
+    /* opacity: 0.75; */
+    /* border-color: #7400B8; */
+    /* border: 2px solid black;  */
+    /* border: 5px solid #7400B8; */
+    /* border-style: double; */
+
+    /* margin-left: 10%;
+    margin-right: 10%; */
+
+  }
+  
+.poemType{
+display: flex;
+/* background-color: rgba(255, 255, 255, 0.5); */
+
+}
+
+

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MyImage from './logooo_aprbun-removebg-preview.png';
 import IcSearch from './magnifying-glass-search.png'
 import './Navbar.css';
 
 import  { useState } from "react";
+
+import ThemeSelector from './ThemeSelector';
 
 import AudioComponent from './AudioComponent';
 
@@ -24,8 +26,20 @@ function speak(text) {
 
 
 function Navbar() {
-  
+
   const [showDiv, setShowDiv] = useState(false);
+
+  const[selectedTheme, setSelectedTheme ] = useState(null)
+  const[stanzas, setStanzas ] = useState(null)
+  const[verses, setVerses ] = useState(null)
+  
+  const [inputValue, setInputValue] = useState('');
+
+  function handleInputChange(event) {
+    setInputValue(event.target.value);
+  }
+
+
 
   const handleButtonClick = () => {
     setShowDiv(!showDiv);
@@ -33,11 +47,16 @@ function Navbar() {
   
 
 
+
   // const handleButtonClick = () => {
   //   setShowDiv(false);
   // };
 
+  useEffect(()=>{
+    console.log(selectedTheme)
+  }, // []
 
+  )
 
 
 
@@ -62,7 +81,7 @@ function Navbar() {
 
   <h5>Choose a theme for your poeme:</h5>
 
-    <div className='poemType'> 
+    {/* <div className='poemType'> 
           <button className='onePoemType'>Art</button>
           <button className='onePoemType'>Comedy</button>
           <button className='onePoemType'>Dramatic</button>
@@ -76,17 +95,53 @@ function Navbar() {
           <button className='onePoemType'>History</button>    
           <button className='onePoemType'>Romantic</button>    
           <button className='onePoemType'>Science</button>
-      </div>
+      </div> */}
+      <ThemeSelector
+      options={
+        [
+          {
+            label:"Art"
+          },
+          {
+            label:"Comedy"
+          },
+          {
+            label:"Dramatic"
+          },
+          {
+            label:"Dreams"
+          },
+          {
+            label:"Family"
+          },
+          {
+            label:"Friendship"
+          },
+          {
+            label:"History"
+          },
+          {
+            label:"Romantic"
+          },
+          {
+            label:"Science"
+          },
+        ]
+      }
+      selectedTheme = "Art"
+      setSelectedTheme = {setSelectedTheme}
+      />
+
 
     <h5>How many verses and stanzas do you want to have your poem?</h5>
     <div className='versesArea'>
       <div>
         <label for="fname">STANAZ:&nbsp;</label>  &nbsp;
-        <input type="text" id="fname" name="fname" className='text'/>  
+        <input type="number" id="fname" name="fname" className='text'/>  
       </div>
       <div class>  
         <label for="lname">VERSES:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" id="fname" name="fname" className='text'/>  
+        <input type="number" id="fname" name="fname" className='text'/>  
       </div> 
       </div>  
       <br/><br/> <br/>  <br/>  <br/> <br/> 
@@ -101,11 +156,23 @@ function Navbar() {
       <br/><br/>
 
     <div class="search-container">
-    <form action="/action_page.php">
+    <form>
       {/* <input type="text" placeholder="Search.." name="search"/> */}
-      <textarea></textarea>
+      <textarea
+      value={inputValue} onChange={handleInputChange}
+      ></textarea>
+      {/* <p>Input value: {inputValue}</p> */}
+
       <br/>
-      <button type="submit" className='searchButton'><i><img className='img2' src={IcSearch}/></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLICK TO GENERATE YOUR POEM</button><br/><br/><br/><br/>
+        <button type="submit" className='searchButton'>
+          <i><img className='img2' src={IcSearch}/></i>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          CLICK TO GENERATE YOUR POEM
+        </button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       <h3>OR</h3>
       <br/><br/><br/>
     </form>
