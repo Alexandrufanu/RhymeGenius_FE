@@ -1,3 +1,8 @@
+// import play from '../images/play.png';
+// import pause from '../images/pause.png';
+// import resume from '../images/resume.png';
+// import '../styles/AudioComponent.css';
+
 
 
 
@@ -30,4 +35,3 @@ export default function AudioComponent(props){
 
     </>)
 }
-
