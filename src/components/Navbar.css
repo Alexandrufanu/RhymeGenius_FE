@@ -184,3 +184,22 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
     margin-left: 25%;
     margin-top: 5%;
   }
+
+  .poemType{
+    display: flex;
+
+  }
+
+  .onePoemType{
+    border: 5px solid #7400B8;
+    border-style: double;
+    border-radius: 80px;
+    margin-left: 9%;
+    width: 20%;
+    height: 5vh;
+    margin-bottom: 5%;
+  }
+
+  button{
+    cursor: pointer;
+  }

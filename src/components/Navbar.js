@@ -7,7 +7,8 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <div  style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}>  
+
+  <div  style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}>  
         
      <nav> 
     <img src={MyImage} alt="Description of the image" />
@@ -17,9 +18,9 @@ function Navbar() {
     </nav>
 
 
-      <div className='container2'>
+ <div className='container2'>
 
-      <div className='container3'>
+  <div className='container3'>
  
     <div>
       <h2>Write a word or a sentence to generate a poem:</h2>
@@ -40,20 +41,22 @@ function Navbar() {
   <div className='random'>
       <h4>You can generate a random poem:</h4>
       <button className='RandButton'>RANDOM</button>
-    </div>
+  </div>
 
-    </div> 
+  </div> 
+
+  <div className='poemType'>  
+      <button className='onePoemType'>Romantic</button>    
+      <button className='onePoemType'>Comedy</button>
+      <button className='onePoemType'>Dramatic</button>
+  </div>
+
+</div>
 
     
 
-
+   
     </div>
-
-    
-
-    </div>
- 
-
   );
 }
 
