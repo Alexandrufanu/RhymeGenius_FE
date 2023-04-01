@@ -7,7 +7,11 @@ import './Navbar.css';
 
 function Navbar() {
   return (
-    <div  style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}>  
+    <div  
+    // style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+    style={{   zIndex: 1 }}
+
+    >  
         
      <nav> 
     <img src={MyImage} alt="Description of the image" />
