@@ -24,55 +24,7 @@ function speak(text) {
 
 
 function Navbar() {
-
-
-  const style = {
-    container: {},
-    text: {},
-    buttons: {},
-    play: {
-      hover: {
-        backgroundColor: 'GhostWhite',
-      },
-
-      button: {
-        padding:'4',
-        fontFamily: 'Helvetica',
-        fontSize: '1.0em',
-        cursor: 'pointer',
-        pointerEvents: 'none',
-        outline: 'none',
-        backgroundColor: 'inherit',
-        border: 'none'
-      },
-
-    },
-    pause: {
-      hover: {},
-      button: {},
-    },
-    stop: {
-      hover: {
-        cursor: 'pointer',
-
-      },
-      button: {
-        cursor: 'pointer',
-        pointerEvents: 'none',
-        outline: 'none',
-        backgroundColor: 'Gainsboro',
-        border: 'solid 5px rgba(255,255,255,1)',
-        borderRadius: 2,
-      },
-    },
-    resume: {
-      hover: {},
-      button: {},
-    },
   
-  };
-
-
   const [showDiv, setShowDiv] = useState(false);
 
   const handleButtonClick = () => {

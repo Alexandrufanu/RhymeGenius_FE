@@ -1,20 +1,8 @@
-import Speech from 'react-speech';
-
-
-
-function speak(text) {
-
-
- ;
-}
-
 
 
 
 export default function AudioComponent(props){
     var msg = new SpeechSynthesisUtterance();
-    var voices = speechSynthesis.getVoices();
-    // msg.voice = voices[10];
     msg.voiceURI = 'native';
     msg.volume = 1;
     msg.rate = 1;
@@ -28,7 +16,7 @@ export default function AudioComponent(props){
 
         <button onClick={() =>  speechSynthesis.speak(msg)}>
             Play!
-            
+
         </button>
 
         <button onClick={() =>{ speechSynthesis.pause()}}>
