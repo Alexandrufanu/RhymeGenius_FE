@@ -1,14 +1,21 @@
 
   
+  
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgba(22, 239, 255, 0.2); */
-    background: rgb(107,160,223);
-background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: rgb(202, 198, 198, 0.6);;
+    /* background: rgb(107,160,223);
+background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%); */
         padding: 0px;
     color: white;
+    border: 5px solid #7400B8;
+    border-style: double;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    /* margin-bottom: 1%; */
   }
   
   nav ul {
@@ -26,6 +33,21 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
     color: white;
     text-decoration: none;
   }
+
+
+  .container2{
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: white;
+    border-color: #7400B8;
+    /* border: 2px solid black;  */
+    border: 5px solid #7400B8;
+    border-style: double;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+
 
   input[type=text] {
     padding: 6px;
@@ -64,4 +86,101 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
      input[type=text] {
       border: 1px solid #ccc;  
     }
+  }
+
+ 
+  .search-container{
+    /* display: flex;
+  align-items: center; */
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    gap: 10px 30px;
+  }
+
+
+  /* button {
+    height: 80%;
+    width: auto;
+  } */
+
+  .img2 {
+    height: 2.6vh;
+    object-fit: cover;
+    width: 100%;
+    /* margin-top: 6%; */
+    display: block;
+    /* margin-top: 5%; */
+
+  }
+  
+  /* input {
+    flex: 1;
+    padding: 10px;
+    height: 50%;
+    border: none;
+    font-size: 16px;
+    vertical-align: bottom
+
+  } */
+  textarea{
+    flex: 1;
+    /* padding: 30%; */
+    width: 270%;
+    height: 10vh;
+    border: none;
+    font-size: 16px;
+    /* vertical-align: bottom; */
+    resize: vertical;
+    display: block;
+    border-radius: 10px;
+    background-color: rgb(202, 198, 198);
+    color: black;
+  }
+
+  h2{
+    color: #7400B8;
+    margin-left: 5%;
+    font-size: 150%;
+
+  }
+
+  h3{
+    margin-left: 129%;
+    /* margin-right: 16%; */
+    margin-top: -12%;
+    color: #7400B8;
+  }
+
+  h4{
+    width: 150%;
+    font-size: 150%;
+    margin-right: 10%;
+  }
+
+  .container3{
+    display: flex;
+    flex-direction: row;
+    /* width: 50%; */
+    margin-left: 0%;
+  }
+
+  .random{
+    margin-left: 30%;
+    color: #7400B8;
+  }
+
+  .RandButton{
+    color: #7400B8 ;
+    background-color: white;
+    border: 5px solid #7400B8;
+    border-style: double;
+    border-radius: 5px;
+    width: 40%;
+    height: 5vh;
+    margin-left: 25%;
+    margin-top: 5%;
   }

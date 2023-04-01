@@ -6,28 +6,31 @@ function App() {
   
   
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+  <Navbar/>
+
+{/* <div style={{   zIndex: 0 }}>
+  <div class="waveWrapper waveAnimation">
+
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style={{backgroundImage : "requre(url('http://front-end-noobs.com/jecko/img/wave-top.png')"}}></div>
+  </div>
+  
+  <div class="waveWrapperInner bgMiddle">
+  <div className="wave waveMiddle" style={{ backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-mid.png')" }}></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-bot.png')" }}></div>
+  </div>
+</div> */}
+
+</div>
 
 
-      
-      </header> */}
+
+
     
-    <Navbar/>
     
-    </div>
   );
 }
 
