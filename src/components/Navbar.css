@@ -110,14 +110,15 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
   } */
 
   .img2 {
-    height: 2.6vh;
+    height: 3vh;
     object-fit: cover;
     width: 100%;
+    /* margin-left: 0%; */
     /* margin-top: 6%; */
     display: block;
     /* margin-top: 5%; */
     border-radius: 5px;
-
+    padding: 15%;
   }
   
   /* input {
@@ -132,8 +133,8 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
   textarea{
     flex: 1;
     /* padding: 30%; */
-    width: 270%;
-    height: 50vh;
+    width: 297%;
+    height: 20vh;
     border: none;
     font-size: 16px;
     /* vertical-align: bottom; */
@@ -142,37 +143,52 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
     border-radius: 10px;
     background-color: rgb(202, 198, 198);
     color: black;
+    margin-left: -20%;
+    margin-top: -79%;
+  }
+
+  .searchButton{
+    margin-left: -19%;
+    border-radius: 9px;
+    justify-content: center;
+    align-items: center;
+    width: 300%;
+    display: flex;
+    border: 5px solid #7400B8;
+    border-style: double;
   }
 
   h2{
     color: #7400B8;
-    margin-left: 5%;
-    font-size: 150%;
+    margin-left: 2%;
+    font-size: 180%;
 
   }
 
   h3{
-    margin-left: 129%;
+    margin-left: 99%;
     /* margin-right: 16%; */
-    margin-top: -12%;
+    margin-top: -2%;
+    font-size: 220%;
+
     color: #7400B8;
   }
 
   h4{
     width: 150%;
-    font-size: 150%;
-    margin-right: 10%;
+    font-size: 180%;
+    margin-left: -38%;
   }
 
   h5{
-    margin-left: 30%;
+    margin-left: 10%;
     font-size: 180%;
     color: #7400B8;
   }
 
   .container3{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* width: 50%; */
     margin-left: 0%;
   }
@@ -180,6 +196,11 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
   .random{
     margin-left: 30%;
     color: #7400B8;
+    margin-right: 17%;
+  }
+
+  .poem{
+    margin-left: 8%;
   }
 
   .RandButton{
@@ -190,8 +211,20 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
     border-radius: 1px;
     width: 40%;
     height: 5vh;
-    margin-left: 25%;
+    margin-left: -39%;
     margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+  }
+
+  .appear{
+    margin-top:-5% ;
+    margin-bottom: 10%;
+    margin-left: -38%;
   }
 
   .poemType{
@@ -211,4 +244,35 @@ background: linear-gradient(90deg, rgb(90, 149, 221) 61%, rgb(132, 207, 230) 97%
 
   button{
     cursor: pointer;
+  }
+
+  .allpoemTheme{
+    display: flex;
+    gap: 10px;
+  }
+
+
+  .versesArea{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+  }
+
+  /* .text{
+    width: 15%;
+    height: 2vh;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid #7400B8;
+    border-style: double;
+
+  
+  } */
+  input[type="text"] {
+    width: 15%;
+    height: 2vh;
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid #7400B8;
+    border-style: double;
   }

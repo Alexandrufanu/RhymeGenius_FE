@@ -49,39 +49,52 @@ function Navbar() {
 
   <h5>Choose a theme for your poeme:</h5>
 
-  <div  className='poemTy'>  
     <div className='poemType'> 
           <button className='onePoemType'>Art</button>
           <button className='onePoemType'>Comedy</button>
           <button className='onePoemType'>Dramatic</button>
       </div>
-      <div className='poemType'>  
+      <div className='poemType' style={{marginTop:"-3%"}}>  
           <button className='onePoemType'>Dreams</button>
           <button className='onePoemType'>Family </button>    
           <button className='onePoemType'>Friendship</button>
       </div>
-      <div className='poemType'>  
+      <div className='poemType' style={{marginTop:"-3%"}}>  
           <button className='onePoemType'>History</button>    
           <button className='onePoemType'>Romantic</button>    
           <button className='onePoemType'>Science</button>
       </div>
-    </div>   
+
+    <h5>How many verses and stanzas do you want to have your poem?</h5>
+    <div className='versesArea'>
+      <div>
+        <label for="fname">STANAZ:&nbsp;</label>  &nbsp;
+        <input type="text" id="fname" name="fname" className='text'/>  
+      </div>
+      <div class>  
+        <label for="lname">VERSES:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="fname" name="fname" className='text'/>  
+      </div> 
+      </div>  
+      <br/><br/> <br/>  <br/>  <br/> <br/> 
 
 
   <div className='container3'>
  
-    <div>
+    <div className='poem'>
    
       <h2>Write a word or a sentence to generate a poem:</h2>
 
-      <h3>OR</h3>
+      <br/><br/>
 
     <div class="search-container">
     <form action="/action_page.php">
       {/* <input type="text" placeholder="Search.." name="search"/> */}
       <textarea></textarea>
       <br/>
-      <button type="submit"><i><img className='img2' src={IcSearch}/></i></button>
+      <button type="submit" className='searchButton'><i><img className='img2' src={IcSearch}/></i></button><br/><br/><br/><br/>
+      <h3>OR</h3>
+      <br/><br/><br/>
     </form>
   </div>
 
@@ -90,7 +103,7 @@ function Navbar() {
   <div className='random'>
       <h4>You can generate a random poem:</h4>
       <button className='RandButton' onClick={handleButtonClick}>RANDOM</button>
-      {showDiv && <div>This is the div that appears when the button is clicked.</div>}
+      {showDiv && <div className='appear'>This is the div that appears when the button is clicked.</div>}
     </div>
   </div>
 
