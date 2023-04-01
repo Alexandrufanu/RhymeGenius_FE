@@ -153,7 +153,7 @@ function Navbar() {
       {/* <input type="text" placeholder="Search.." name="search"/> */}
       <textarea></textarea>
       <br/>
-      <button type="submit" className='searchButton'><i><img className='img2' src={IcSearch}/></i></button><br/><br/><br/><br/>
+      <button type="submit" className='searchButton'><i><img className='img2' src={IcSearch}/></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CLICK TO GENERATE YOUR POEM</button><br/><br/><br/><br/>
       <h3>OR</h3>
       <br/><br/><br/>
     </form>

@@ -1,5 +1,3 @@
-import Speech from 'react-speech';
-
 
 
 function speak(text) {
