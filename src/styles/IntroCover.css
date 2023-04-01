@@ -1,0 +1,35 @@
+.cover-container {
+    min-height: 100%;
+    height: 100%;
+  }
+  
+  .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content-container {
+
+    min-height: 100%;
+    height: 100%;
+}
+#wrapper {
+    min-height: 100%; 
+    height: 100%;
+}
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
