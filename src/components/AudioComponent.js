@@ -1,7 +1,7 @@
-// import play from '../images/play.png';
-// import pause from '../images/pause.png';
-// import resume from '../images/resume.png';
-// import '../styles/AudioComponent.css';
+import play from '../images/play.png';
+import pause from '../images/pause.png';
+import resume from '../images/resume.png';
+import '../styles/AudioComponent.css';
 
 
 
@@ -18,20 +18,32 @@ export default function AudioComponent(props){
 
     return(<>
 
+      <div className='audio'>  
+        {/* <button onClick={() =>  speechSynthesis.speak(msg)}> */}
 
-        <button onClick={() =>  speechSynthesis.speak(msg)}>
-            Play!
+        <i>
+            <img className='bt'  src={play} onClick={() =>  speechSynthesis.speak(msg)} />
+        </i>
 
-        </button>
+        {/* </button> */}
 
-        <button onClick={() =>{ speechSynthesis.pause()}}>
+        {/* <button onClick={() =>{ speechSynthesis.pause()}}>
             Stop!
-        </button>
+        </button> */}
 
-        <button onClick={() =>{ speechSynthesis.resume()}}>
+        <i>
+            <img className='bt'  src={pause} onClick={() =>{ speechSynthesis.pause()}} />
+        </i>
+
+        {/* <button onClick={() =>{ speechSynthesis.resume()}}>
             Resume
-        </button>
+        </button> */}
 
+        <i>
+            <img className='bt'  src={resume} onClick={() =>{ speechSynthesis.resume()}} />
+        </i>   
+
+        </div>  
 
     </>)
 }

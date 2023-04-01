@@ -9,3 +9,15 @@
     margin-left: 8%;
 
 } */
+
+.bt{
+    width: 44%;
+    margin-left: 9%;
+}
+
+.audio{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+     margin-top: 2%;  
+}
