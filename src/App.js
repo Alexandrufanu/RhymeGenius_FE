@@ -4,7 +4,34 @@ import Navbar from './components/Navbar';
 
 import mess_logo from "./images/messenger.png"
 
+import React, { useEffect, useRef } from 'react'
+
+
+
+
+
 function App() {
+
+  const navbarStart = useRef(null)
+
+  const scrollToBottom = () => {
+    navbarStart.current?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+  useEffect(() => {
+    sleep(500).then(() => {
+      scrollToBottom()
+  });
+    
+  }, []);
+
+
+
+
+
   return (
     <div className="app-container">
       
@@ -18,34 +45,21 @@ function App() {
       </div>
     </div>
 
+      <div ref={navbarStart}> 
+        <Navbar />
+        {/* <Speech 
+          stop={true} 
+          pause={true} 
+          resume={true} 
+          styles={textstyle} 
+          text="I have changed the colour of the play button and made it smaller" />
+       */}
 
-      <Navbar />
+  
+      </div>
+    
 
-      {/* <div className="waveWrapper waveAnimation">
-          <div className="waveWrapperInner bgTop">
-            <div className="wave waveTop" style={{backgroundImage : "url('http://front-end-noobs.com/jecko/img/wave-top.png')"}}></div>
-          </div>
-          <div className="waveWrapperInner bgMiddle">
-            <div className="wave waveMiddle" style={{ backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-mid.png')" }}></div>
-          </div>
-          <div className="waveWrapperInner bgBottom">
-            <div className="wave waveBottom" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-bot.png')" }}></div>
-          </div>
-          </div>
-     */}
-      {/* <div className="wave-wrapper">
-        <div className="waveWrapper waveAnimation">
-          <div className="waveWrapperInner bgTop">
-            <div className="wave waveTop" style={{backgroundImage : "url('http://front-end-noobs.com/jecko/img/wave-top.png')"}}></div>
-          </div>
-          <div className="waveWrapperInner bgMiddle">
-            <div className="wave waveMiddle" style={{ backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-mid.png')" }}></div>
-          </div>
-          <div className="waveWrapperInner bgBottom">
-            <div className="wave waveBottom" style={{backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-bot.png')" }}></div>
-          </div>
-        </div>
-      </div> */}
+
     
     </div>
   );
