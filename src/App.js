@@ -2,9 +2,23 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 
+import mess_logo from "./images/messenger.png"
+
 function App() {
   return (
     <div className="app-container">
+      
+      <div className="cover-container">
+        <div className="cover-image"></div>
+      <div className="content-container">
+        <h1>Welcome to RhymeGenius!</h1>
+
+        <img src={mess_logo}/>
+        <p>Generate any kind of poem!</p>
+      </div>
+    </div>
+
+
       <Navbar />
 
       {/* <div className="waveWrapper waveAnimation">
