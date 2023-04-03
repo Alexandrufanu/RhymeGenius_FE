@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import mess_logo from "./images/messenger.png"
 
 import React, { useEffect, useRef } from 'react'
+import InputOutput from './components/InputOutput';
 
 
 
@@ -47,6 +48,8 @@ function App() {
 
       <div ref={navbarStart}> 
         <Navbar />
+        <InputOutput/>
+
         {/* <Speech 
           stop={true} 
           pause={true} 
